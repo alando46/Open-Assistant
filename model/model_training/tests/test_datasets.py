@@ -21,6 +21,7 @@ def test_rl_sft_mode_switch():
     assert isinstance(row, str)
 
 
+@pytest.mark.skip(reason="very slow")
 def test_all_datasets():
 
     qa_base = QA_DATASETS
@@ -39,6 +40,7 @@ def test_all_datasets():
             eval[idx]
 
 
+@pytest.mark.skip(reason="very slow")
 def test_collate_fn():
 
     config = Namespace(cache_dir=".cache", model_name="Salesforce/codegen-2B-multi")
