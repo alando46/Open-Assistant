@@ -21,7 +21,11 @@ def test_rl_sft_mode_switch():
     assert isinstance(row, str)
 
 
+# TODO:
+@pytest.mark.skip(reason="Cannot import glibcxx in pytest")
 def test_all_datasets():
+    from custom_datasets import QA_DATASETS, SUMMARIZATION_DATASETS, get_one_dataset
+    from custom_datasets.dialogue_collator import DialogueDataCollator
     qa_base = QA_DATASETS
     summarize_base = SUMMARIZATION_DATASETS
     others = ["webgpt", "soda", "joke", "explain_prosocial", "prosocial_dialogue"]
@@ -37,8 +41,10 @@ def test_all_datasets():
         for idx in range(min(len(eval), 1000)):
             eval[idx]
 
-
+@pytest.mark.skip(reason="Cannot import glibcxx in pytest")
 def test_collate_fn():
+    from custom_datasets import QA_DATASETS, SUMMARIZATION_DATASETS, get_one_dataset
+    from custom_datasets.dialogue_collator import DialogueDataCollator
     from torch.utils.data import ConcatDataset, DataLoader
     from utils import get_tokenizer
 
