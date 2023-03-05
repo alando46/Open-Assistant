@@ -6,6 +6,11 @@ Trainer code based on huggingface. Compatible with deepspeed or accelerate
 
 `pip install .`
 
+<<<<<<< HEAD
+=======
+Run tests: `pytest .`
+
+>>>>>>> 9ce162c5 (ran precommit pipeline)
 Write or inherit a `configs/<config-name>.yml` file to store training
 configuration details.
 

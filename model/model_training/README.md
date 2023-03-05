@@ -4,6 +4,11 @@
 
 `pip install .`
 
+<<<<<<< HEAD
+=======
+Run tests: `pytest .`
+
+>>>>>>> 9ce162c5 (ran precommit pipeline)
 Start training SFT model
 
 ```bash

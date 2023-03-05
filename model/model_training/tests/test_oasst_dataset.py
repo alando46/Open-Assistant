@@ -1,6 +1,12 @@
 from argparse import Namespace
 
+<<<<<<< HEAD
 from custom_datasets import get_one_dataset
+=======
+import pytest
+from custom_datasets import get_one_dataset
+
+>>>>>>> 9ce162c5 (ran precommit pipeline)
 
 
 def test_load_oasst_export_dataset():
