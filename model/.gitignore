@@ -1,8 +1,12 @@
 .cache
-.saved_models
 wandb
+<<<<<<< HEAD
 <<<<<<< HEAD
 saved_model
 .saved_models
 =======
 >>>>>>> cbd4193f (📝 fix gitignore issues)
+=======
+saved_model
+.saved_models
+>>>>>>> 8bb67a8d (add one .gitignore to resolve conflicts)
